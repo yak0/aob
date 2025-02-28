@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anadolu Öğrenci Birliği</title>
+    <style>
+        :root {
+            --primary: #11656a;
+            --primary-light: #d4eeef;
+            --text: #333333;
+            --background: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .hero {
+            background-color: var(--primary-light);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+        }
+
+        .activities-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .activity-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            min-width: 200px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .activity-item h3 {
+            color: var(--primary);
+            font-size: 18px;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .address {
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Anadolu Öğrenci Birliği" class="logo-icon">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#activities">Faaliyetler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Geçmişten geleceğe yanan özgürlük ateşi</h1>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımızda</h2>
+            <div class="about">
+                <p>Tevhid, ahlak, kardeşlik, adalet ve özgürlük temelinde bir mücadeleyi benimsemiş olan Anadolu Öğrenci
+                    Birliği; geçmişine duyarlı, geleceğin öncüsü, geleneğin insanı yücelten değerlerinin takipçisi,
+                    bağnazlıktan uzak, erdemin ve insanlık birikiminin vicdanı olmaya namzet bir gençlik hareketidir.
+                    Sadece Anadolu’daki değil, tüm yeryüzü coğrafyasındaki gelişmelere karşı duyarlı, sözü ve davası
+                    olan bir gönüllüler topluluğudur. İslami ve insani değerleri kuşanmış, inandığı değerleri kurumsal
+                    meşvereti esas alarak toplumsal zeminde hayata taşıma azim ve kararlılığında olan bir teşkilattır.
+                    Anadolu Öğrenci Birliği; davası ve derdi olan, topluma söyleyecek sözü bulunan, ortak bir şuur ve
+                    birliktelik hukuku çerçevesinde yekvücut olan, bununla birlikte farklılıkları zenginlik olarak
+                    gören, şahsiyet sahibi insanlar yetiştiren bir organizasyondur.
+                </p>
+
+                <p>Hz. Adem’le başlayan ve bizimle devam eden insanlığın nöbetini tutma geleneğinin temsilcilerinden
+                    biri olan Anadolu Öğrenci Birliği; yaşadığı coğrafyanın genç kuşaklarına umut olmak için kurulmuş ve
+                    hâlihazırda bu umudu pratikte sergileyerek gençlerin iman ve irfanına vesile olmak, bugünlerini ve
+                    geleceklerini kulluk ekseninde geçirmelerini sağlamak gayretindedir. İnsanlığın tüm renklerine ve
+                    inanış tarzlarına saygı duyan bir öğretinin müdavimleri olarak bizler, kula kulluğu reddeden ve
+                    yalnızca Allah’a kul olan; tevhid, adalet ve özgürlük savunucularıyız.
+                </p>
+
+                <p>Mütevazı bir hayatı olan ve “kurutulmuş et yiyen” bir kadının oğlu olduğunu söyleyen, âlemlere rahmet
+                    Hz. Muhammed (sav)’i rol model alan bir gençlik örgütlenmesiyiz. Nerede, hangi konumda olursak
+                    olalım, toplumun hangi kademesinde hayat sürersek sürelim, her yerde ve her ortamda “emr-i bil-maruf
+                    nehyi anil-münker”i önceleyen, yani iyilikleri yaygınlaştırırken kötülüklerden kaçınan; duruşu,
+                    yaşayışı ve deyişiyle İslam olan bireyler topluluğuyuz. Yaşadığımız coğrafyada İslam’ın rahmetine ve
+                    bereketine vesile olacak eylemlere imza atmaya azmetmiş, aktif iyilik olma cehdinde olan iman etmiş
+                    bir topluluğuz.</p>
+                <p>
+                    Bizler, bu bilinçle hareket hâlindeyiz. Şayet sahip olduklarımız bizi dünya hayatında
+                    sorumluluklarımızı ifaya değil de ihmale sürüklüyorsa hem dünyada hem de ukbada kaybedenler
+                    olacağımızı biliyoruz. Hayatımızın her alanında Allah’a kul olmayı, yeryüzünü ıslah ve imar etmeyi,
+                    insanlar arasında barışı ve kardeşliği sağlamayı hedefliyoruz. Yürüyüşümüzü “Hanginizin daha iyi
+                    amel işleyeceğini bilmek için ölümü ve hayatı yaratan O’dur” ayetiyle anlamlandırmaya çalışıyoruz.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2 class="section-title">Faaliyetler</h2>
+            <div class="activities-list">
+                <div class="activity-item">
+                    <h3>Okuyorum projesi
+                    </h3>
+                </div>
+                <div class="activity-item">
+                    <h3>Kardeşlik Sofrası
+                    </h3>
+                </div>
+                <div class="activity-item">
+                    <h3>Erasmus+ Projeleri</h3>
+                </div>
+                <div class="activity-item">
+                    <h3>Gençlik Kampları
+                    </h3>
+                </div>
+                <div class="activity-item">
+                    <h3>Öğrenci Meclisleri</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-info">
+                <div class="address">
+                    <h3>Adres</h3>
+                    <p>Akşamseddin mahallesi Halıcılar caddesi no:72/1
+                    </p>
+                    <p>FATİH / İSTANBUL</p>
+
+                    <p>0530 143 9288
+                    </p>
+                    <p>212 513 8888
+                    </p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="social-links">
+            
+                    <a target="_blank" href="https://x.com/anadoluogrenci?s=21" class="social-link">X</a>
+                    <a target="_blank" href="https://www.instagram.com/anadoluogrencibirligi" class="social-link">IG</a>
+         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anadolu Öğrenci Birliği.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
